@@ -1,34 +1,9 @@
 import React from "react";
 import "./SidebarOption.css";
-import { useHistory } from "react-router-dom";
-import db from "./firebase";
 
-const SidebarOption = ({ Icon, title, id, addChannelOption }) => {
-  const history = useHistory();
-
-  const selectChannel = () => {
-    if (id) {
-      history.push(`/room/${id}`);
-    } else {
-      history.push(title);
-    }
-  };
-
-  const addChannel = () => {
-    const channelName = prompt("Please enter the channel name");
-
-    if (channelName) {
-      db.collection("rooms").add({
-        name: channelName,
-      });
-    }
-  };
-
+const SidebarOption = ({ Icon, title }) => {
   return (
-    <div
-      className="sidebarOption"
-      onClick={addChannelOption ? addChannel : selectChannel}
-    >
+    <div className="sidebarOption">
       {Icon && <Icon className="sidebarOption__icon" />}
       {Icon ? (
         <h3>{title}</h3>
