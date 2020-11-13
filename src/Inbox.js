@@ -1,11 +1,10 @@
 import React from "react";
-import Header from "./Header";
-
+import "./Inbox.css";
 class InboxEmail extends React.Component {
   constructor() {
     super();
     this.state = {
-      sections: [
+      inbox: [
         {
           mId: "guid-1",
           unread: true,
@@ -26,8 +25,10 @@ class InboxEmail extends React.Component {
   render() {
     return (
       <div className="inbox-api">
-        {this.state.sections.map(({ mId, unread, subject, content }) => (
-          <Header key={mId} title={subject} content={content} />
+        {this.state.inbox.map((inbox) => (
+          <p>
+            key={inbox.mId} {inbox.unread} {inbox.subject} {inbox.content}
+          </p>
         ))}
       </div>
     );

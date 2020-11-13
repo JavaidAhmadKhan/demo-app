@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
-import InboxEmail from "./InboxEmail";
-import SpamEmail from "./SpamEmail";
+import Inbox from "./Inbox";
+import Spam from "./Spam";
 
 import SidebarOption from "./SidebarOption";
 import InboxIcon from "@material-ui/icons/Inbox";
@@ -27,9 +27,9 @@ const Sidebar = () => {
 
       <SidebarOption Icon={ExpandLessIcon} title="Folders" />
       <SidebarOption Icon={InboxIcon} title="Inbox" />
-      <InboxEmail />
+      <Inbox />
       <SidebarOption Icon={BlockIcon} title="Junk Email" />
-      <SpamEmail />
+      <Spam />
       <SidebarOption Icon={EditIcon} title="Drafts" />
       <SidebarOption Icon={SendIcon} title="Sent Items" />
       <SidebarOption Icon={DeleteIcon} title="Deleted Items" />
