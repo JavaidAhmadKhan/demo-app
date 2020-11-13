@@ -1,16 +1,17 @@
-.inbox-api {
+.spam-api {
   text-align: center;
   color: blue;
 }
 
-.inbox__subject {
+.spam__subject {
   text-align: center;
   font-size: 20px;
   color: black;
 }
 
-.inbox__content {
+.spam__content {
   text-align: center;
   display: flex;
   font-size: 14px;
+  color: #f59642;
 }

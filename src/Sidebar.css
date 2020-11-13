@@ -4,6 +4,8 @@
   background-color: lightgray;
   border-top: 1px solid lightgray;
   max-width: 260px;
+  scroll-behavior: auto;
+  overflow: scroll;
 }
 
 .sidebar__search {

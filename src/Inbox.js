@@ -10,7 +10,7 @@ class InboxEmail extends React.Component {
           unread: true,
           subject: "Training Program",
           content:
-            "About Microsoft Virtual Academy<br/>Microsoft Virtual Academy provides free online training by world-class experts to help you build your technical skills and advance your career. Make it your destination of choice to get started on the latest Microsoft technologies and join this vibrant community.",
+            "About Microsoft Virtual Academy.Microsoft Virtual Academy provides free online training by world-class experts to help you build your technical skills and advance your career. Make it your destination of choice to get started on the latest Microsoft technologies and join this vibrant community.",
         },
         {
           mId: "guid-2",
@@ -27,7 +27,10 @@ class InboxEmail extends React.Component {
       <div className="inbox-api">
         {this.state.inbox.map((inbox) => (
           <p>
-            key={inbox.mId} {inbox.unread} {inbox.subject} {inbox.content}
+            {/* <div className="inbox__mId">{inbox.mId}</div> */}
+            {/* <div className="inbox__unread">{inbox.unread}</div> */}
+            <div className="inbox__subject">{inbox.subject}</div>
+            <div className="inbox__content">{inbox.content}</div>
           </p>
         ))}
       </div>
