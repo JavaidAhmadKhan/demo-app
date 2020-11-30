@@ -1,6 +1,5 @@
 import React from "react";
 import "./Spam.css";
-
 class Spam extends React.Component {
   constructor() {
     super();

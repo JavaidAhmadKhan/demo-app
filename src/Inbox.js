@@ -1,6 +1,7 @@
 import React from "react";
 import "./Inbox.css";
-class InboxEmail extends React.Component {
+
+class Inbox extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -38,4 +39,4 @@ class InboxEmail extends React.Component {
   }
 }
 
-export default InboxEmail;
+export default Inbox;
